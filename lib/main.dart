@@ -8,7 +8,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Getaroid",
+          "Red Bull",
           style: TextStyle(
               fontFamily: "DancingScript",
               letterSpacing: 1.8,
@@ -19,14 +19,7 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: Text(
-          "Hello Drinkers",
-          style: TextStyle(
-              fontSize: 20.0,
-              letterSpacing: 1.8,
-              fontWeight: FontWeight.w900,
-              fontFamily: "DancingScript"),
-        ),
+        child: Image.asset('assets/logoblackpng.png'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
