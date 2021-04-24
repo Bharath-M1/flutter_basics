@@ -7,6 +7,11 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: Icon(
+          Icons.show_chart,
+          size: 50,
+          color: Colors.white,
+        ),
         title: Text(
           "Red Bull",
           style: TextStyle(
@@ -19,17 +24,23 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: Image.asset('assets/logoblackpng.png'),
+        child: ElevatedButton.icon(
+          onPressed: () {
+            print('Added to cart ');
+          },
+          icon: Icon(
+            Icons.add,
+            size: 40,
+          ),
+          label: Text("ADD"),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        backgroundColor: Colors.orange[500],
-        child: Text(
-          "Order",
-          style: TextStyle(
-              color: Colors.black,
-              fontWeight: FontWeight.w900,
-              fontFamily: "DancingScript"),
+        backgroundColor: Colors.black,
+        child: Icon(
+          Icons.sort,
+          size: 30,
         ),
       ),
     );
